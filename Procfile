@@ -1,1 +1,1 @@
-web: gunicorn metafore.wsgi
+web: gunicorn metaphore.wsgi
