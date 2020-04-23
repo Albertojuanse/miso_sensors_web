@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url('metaphore/', views.metaphore, name='metaphore'),
 ]
