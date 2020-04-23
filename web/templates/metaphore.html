@@ -1,74 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Metaphore application's website">
-  <meta name="author" content="MISO.es group at eps.uam.es">
-
-  <title>Metaphore tool</title>
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  {% load static %}
-  <link href="{% static "css/custom-bootstrap-override.css" %}" rel="stylesheet">
-
-</head>
-<body>
-    
-    
-     <header>
-         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style=style="background-color:#E26A6A!important;">
-         <a class="navbar-brand" href="#">Metaphore</a>
-       </nav>
-     </header>
-
-     <main role="main">
-
-         <div class="jumbotron">
-           <div class="container">
-             <h1 class="display-3">Positioning-Based Modelling</h1>
-             <p>Compose physical reliable models using mobile phones built-in sensors and BLE beacons.</p>
-           </div>
-         </div>
-
-       <div class="container marketing">
-
-         <!-- START THE FEATURETTES -->
-
-         <div class="row featurette">
-           <div class="col-md-7">
-               <h2 class="featurette-heading">Metaphore.</h2>
-               
-               <p class="lead"><code>Metaphore</code> iOS application offers you a simple and versatile way to model the space around using your own domain-specific description. Morover <code>Metaphore</code> is meant to be a customizable tool that enables the creation of domain-specific, mode-customized positioning-based modelling tools.</p>
-               
-           </div>
-           <div class="col-md-5">
-               <img src="{% static "images/snap_modelo.png" %}" alt="iPad snapshot" height="500" width="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-           </div>
-           <div class="col-md-12">
-               
-               <p class="lead"><code>Metaphore</code> is an iOS application for mobile devices, soon avalible on AppStore marketplace. Regarding its operation, <code>Metaphore</code> itself manages the privacy requirements of the operating system to use location services; the users, credentials, roles and access permissions to information; the work sessions; the available iBeacon devices; and the storage of models in memory.
-               </p>
-               
-           </div>
-         </div>
-
-         <hr class="featurette-divider">
-
-         <!-- /END THE FEATURETTES -->
-
-       </div><!-- /.container -->
-
-
-       <!-- FOOTER -->
-       <footer class="container">
-         <p class="float-right"><a href="#">Back to top</a></p>
-         <p>&copy; 2020 <a href="http://miso.es">MISO</a> group at <a href="http://uam.es">Autonomous University of Madrid</a>.</p>
-       </footer>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Metaphore application's website">
+        <meta name="author" content="MISO.es group at eps.uam.es">
+            
+        <title>Metaphore tool</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        {% load static %}
+        <link href="{% static "css/custom-bootstrap-override.css" %}" rel="stylesheet">
+                            
+    </head>
+    <body>
+        
+        
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style=style="background-color:#E26A6A!important;">
+                <a class="navbar-brand" href="/web">Metaphore</a>
+            </nav>
+        </header>
+        
+        <main role="main">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center">
+              <h1 class="display-3">Metaphore</h1>
+              <p class="lead">An iOS app to semantize your world.</p>
+            </div>
+            
+            <div class="container marketing">
+                
+                <!-- START THE FEATURETTES -->
+                
+                <div class="row featurette">
+                    <div class="col-md-12">
+                        <h2 class="featurette-heading">Metaphore</h2>
+                        
+                        <p class="lead"><code>Metaphore</code> iOS application offers you a simple and versatile way to model the space around using your own domain-specific description. Moreover, <code>Metaphore</code> allows its own customization, so it enables the creation of others domain-specific, mode-customized positioning-based modelling tools.</p>
+                        
+                    </div>
+                    <div class="col-md-12">
+                        <img src="{% static "images/apple_ibeacon.png" %}" alt="iBeacon logo" height="20" width="74" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <br>
+                        <img src="{% static "images/snap_modelo.png" %}" alt="iPad snapshot" height="500" width="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto border" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                            
+                    </div>
+                    <div class="col-md-12">
+                        
+                        <p class="lead"><code>Metaphore</code> is an iOS application for mobile devices, soon avalible on AppStore marketplace. Itself manages the privacy requirements of the operating system to use location services; the users, credentials, roles and access permissions to information; the work sessions; the available iBeacon devices; and the storage of models in memory.
+                        </p>
+                        
+                    </div>
+                    <div class="col-md-5 mt-5">
+                        <img src="{% static "images/snap_metamodels.png" %}" alt="snapshot of metamodel creation" height="205" width="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto border" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <br>
+                        <p class="figure-caption text-right">Creating metamodels in Metaphore.</p>
+                        <br>
+                        <img src="{% static "images/snap_beacon.png" %}" alt="snapshot of iBeacon submision" height="609" width="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto border" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <br>
+                        <p class="figure-caption text-right">Adding an iBeacon in Metaphore.</p>
+                            
+                    </div>
+                    
+                    <div class="col-md-7">
+                        <h3 class="featurette-heading">Customization.</h3>
+                        
+                        <p class="lead"><code>Metaphore</code> allows defining domain meta-models, and using them in the semantization of physical models. To promote reuse, it enables the construction of type/object libraries at the meta-model/model levels.</p>
+                        
+                        <p class="lead">At the model level, it permits defining libraries of physical objects, including absolute positions and iBeacon devices. These objects can be reused in different physical models, and can be assigned positions via location methods, and domain types and attributes using semantization. Typically, these libraries are created by the tool creator, but can be extended by the end-user modeller, e.g., to configure additional iBeacon devices.</p>
+                        
+                        <p class="lead">The tool also supports the specification of <i>modelling routines</i>: sequences of consecutive positioning modes for specific user roles and a given domain meta-model.</p>
+                        
+                    </div>
+                </div>
+                
+                <hr class="featurette-divider">
+                
+                <!-- /END THE FEATURETTES -->
+                
+            </div><!-- /.container -->
+            
+            
+            <!-- FOOTER -->
+            <footer class="container">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>&copy; 2020 <a href="http://miso.es">MISO</a> group at <a href="http://uam.es">Autonomous University of Madrid</a>.</p>
+            </footer>
+            
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            
+    </body>
 </html>
